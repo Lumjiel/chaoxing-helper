@@ -1,0 +1,43 @@
+{
+  "name": "chaoxing-helper",
+  "version": "1.0.0",
+  "description": "超星学习通助手集 - 代码编辑器增强和自动发帖功能",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/",
+    "format": "prettier --write src/**/*.js"
+  },
+  "keywords": [
+    "tampermonkey",
+    "chaoxing",
+    "学习通",
+    "userscript"
+  ],
+  "author": "YourName",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "greasemonkey": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2021
+    },
+    "rules": {
+      "no-unused-vars": "warn",
+      "no-console": "off"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "none"
+  }
+}
